@@ -14,7 +14,7 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
   @override
   void initState() {
     Timer(
-        const Duration(seconds: 1),
+        const Duration(seconds: 3),
         () => {
               Navigator.of(context).pushReplacement(
                   MaterialPageRoute(builder: (ctx) => const HomePage())),
@@ -41,7 +41,8 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: const [
+            children: [
+              Image.asset("assets/images/icons8-brain-64.png"),
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(0, 24, 0, 0),
                 child: Text(
