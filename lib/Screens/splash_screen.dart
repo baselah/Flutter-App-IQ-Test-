@@ -14,7 +14,7 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
   @override
   void initState() {
     Timer(
-        const Duration(seconds: 3),
+        const Duration(seconds: 5),
         () => {
               Navigator.of(context).pushReplacement(
                   MaterialPageRoute(builder: (ctx) => const HomePage())),

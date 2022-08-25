@@ -16,13 +16,12 @@ class _QuizState extends State<Quiz> {
 
   bool hasbeenPressed = false;
 
-
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: BackGroundScrren(
-         Center(
-           child: Column(
+        Center(
+          child: Column(
             children: [
               Padding(
                 padding: const EdgeInsets.all(10),
@@ -128,8 +127,8 @@ class _QuizState extends State<Quiz> {
                   style: TextButton.styleFrom(
                     primary: Colors.black,
                     backgroundColor: Colors.greenAccent,
-                          shape: const BeveledRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(5))),
-
+                    shape: const BeveledRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(5))),
                   ),
                   icon: const Icon(Icons.next_plan),
                   label: const Text(
@@ -139,8 +138,8 @@ class _QuizState extends State<Quiz> {
                 ),
               ),
             ],
+          ),
         ),
-         ),
       ),
     );
   }
